@@ -80,10 +80,10 @@ void HashTable::displayKeys() const {
 }
 
 
-void HashTable::displayMaxCollisionBucket() const {
+void HashTable::displayMaxCollisionBuckets() const {
     size_t targetSize = m_container.at(m_largest_bucket_idx).size();
 
-    if (targetSize == 0) return;
+    if (targetSize < 2) return;
 
     // Look for hash values that happen to have that much
     // size (which is largest)
@@ -104,4 +104,15 @@ void HashTable::displayMaxCollisionBucket() const {
         displayKeysOfBucket(i);
         std::cout << std::endl;
     }
+}
+
+long long HashTable::totalCollisions() const {
+    int count = 0;
+    for (size_t i = 0; i < m_size; i++) {
+        size_t bucketSize = m_container[i].size();
+        if (bucketSize > 1) {
+            count += bucketSize - 1;
+        }
+    }
+    return count;
 }

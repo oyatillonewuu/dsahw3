@@ -23,5 +23,6 @@ public:
 
     bool find(const std::string& key);
     void displayKeys() const;
-    void displayMaxCollisionBucket() const;
+    void displayMaxCollisionBuckets() const;
+    long long totalCollisions() const;
 };

@@ -27,7 +27,10 @@ int main(void) {
     h1.insert("Scala");
     h1.insert("Elixir");
     h1.displayKeys();
-    h1.displayMaxCollisionBucket();
+    h1.displayMaxCollisionBuckets();
+    h2.displayMaxCollisionBuckets();
+
+    std::cout << "Total collisions: " << h1.totalCollisions() << std::endl;
 
     return 0;
 }

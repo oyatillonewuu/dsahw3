@@ -1,6 +1,5 @@
 #include "src.h"
 #include <string>
-#include <iostream>
 
 
 size_t NaiveCompression::compress(long long value, size_t size) const {
