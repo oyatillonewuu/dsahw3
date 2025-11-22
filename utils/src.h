@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
-#include "../hashtable/src.h"
+
+// Forward declaration
+class HashTable;
 
 void populateHashTableFromFile(const std::string& path, HashTable& ht);
 void taskPrettyPrint(std::string taskName, int n); // n -- n times print special char

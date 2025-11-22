@@ -1,0 +1,40 @@
+==== Collision comparison (Naive compression) ====
+--------------------------------------------------
+Container size        | 1999                      
+Accumulation Constant | 33                        
+Collisions            | 2296                      
+--------------------------------------------------
+Container size        | 1999                      
+Accumulation Constant | 37                        
+Collisions            | 2284                      
+--------------------------------------------------
+Container size        | 1999                      
+Accumulation Constant | 39                        
+Collisions            | 2297                      
+--------------------------------------------------
+Container size        | 1999                      
+Accumulation Constant | 41                        
+Collisions            | 2279                      
+--------------------------------------------------
+Maximum collisions    | a=39 collisions=2297      
+Minimum collisions    | a=41 collisions=2279      
+--------------------------------------------------
+Container size        | 2003                      
+Accumulation Constant | 33                        
+Collisions            | 2242                      
+--------------------------------------------------
+Container size        | 2003                      
+Accumulation Constant | 37                        
+Collisions            | 2281                      
+--------------------------------------------------
+Container size        | 2003                      
+Accumulation Constant | 39                        
+Collisions            | 2258                      
+--------------------------------------------------
+Container size        | 2003                      
+Accumulation Constant | 41                        
+Collisions            | 2274                      
+--------------------------------------------------
+Maximum collisions    | a=37 collisions=2281      
+Minimum collisions    | a=33 collisions=2242      
+--------------------------------------------------

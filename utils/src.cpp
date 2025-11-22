@@ -6,7 +6,6 @@
 
 
 void populateHashTableFromFile(const std::string& path, HashTable& ht) {
-    int count = 0;
     std::string line;
     std::ifstream file(path);
 
@@ -16,10 +15,8 @@ void populateHashTableFromFile(const std::string& path, HashTable& ht) {
         }
 
         ht.insert(line);
-        count++;
     }
     file.close();
-    std::cout << "Read count: " << count << std::endl;
 }
 
 void taskPrettyPrint(std::string taskName, int n) {

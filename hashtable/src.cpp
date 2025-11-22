@@ -92,17 +92,15 @@ void HashTable::displayMaxCollisionBuckets() const {
         size_t bucketSize = m_container[i].size();
         if (bucketSize != targetSize) continue;
 
-        std::cout << std::endl;
-        std::cout << "Hash value: ";
+        std::cout << "Hash value | ";
 
         const std::string& sampleKey = m_container[i].front();
         size_t hashValue = calculateHashValue(sampleKey);
 
         std::cout << hashValue << std::endl;
-        std::cout << "Keys: ";
+        std::cout << "Keys       | ";
 
         displayKeysOfBucket(i);
-        std::cout << std::endl;
     }
 }
 
